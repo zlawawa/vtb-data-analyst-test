@@ -1,18 +1,29 @@
 # Тестовое задание ВТБ: анализ оттока и маркетинговой кампании
 
-Решение тестового задания для аналитика данных. Задание: <https://github.com/Hexlet/ru-test-assignments/tree/main/analytics/vtb-analitik-dannykh>
+Решение тестового задания для аналитика данных.
+
+Задание: [ВТБ, аналитик данных (Hexlet)](https://github.com/Hexlet/ru-test-assignments/tree/main/analytics/vtb-analitik-dannykh)
 
 ## Что сделано
 Задания 1–5: средний ЧОД и число клиентов по сегментам и продуктам (1–2), отток на двух уровнях, клиенты и пары «клиент + продукт» (3), сумма ЧОД по менеджерам (4), оценка кампании (5)
 
 ## Что не сделано
-- Визуализации: по заданию не требуется
+- Визуализации: по заданию не требуются
 - Контрольная группа для оценки эффекта кампании: данных для неё нет
 
 ## Как запустить
-1. `pip install -r requirements.txt`
-2. Файл `database.db` уже лежит в репозитории, рядом с ноутбуком
-3. `jupyter notebook test_task.ipynb`, затем Kernel -> Restart Kernel and Run All Cells...
+
+Требуется Python 3 (или Anaconda). Библиотеки: `pandas`, `jupyter` (список в `requirements.txt`).
+
+1. Скачайте репозиторий (Code -> Download ZIP) и распакуйте. Файл `database.db` уже лежит рядом с ноутбуком
+2. В командной строке в папке проекта выполните:
+
+       python -m pip install -r requirements.txt
+       python -m jupyter notebook test_task.ipynb
+
+3. В ноутбуке выберите Kernel -> Restart Kernel and Run All Cells
+
+Без запуска: результаты видны в `test_task.ipynb`
 
 ## Как проверяла
 Проверка пропусков (`isna`), проверка уникальных значений в `response`, сверка итогов: среди согласившихся 2816 пар «клиент + продукт», ни одной из них не было в p_1
