@@ -16,14 +16,20 @@
 Требуется Python 3 (или Anaconda). Библиотеки: `pandas`, `jupyter` (список в `requirements.txt`).
 
 1. Скачайте репозиторий (Code -> Download ZIP) и распакуйте. Файл `database.db` уже лежит рядом с ноутбуком
-2. В командной строке в папке проекта выполните:
+2. Один раз установите библиотеки:
 
        python -m pip install -r requirements.txt
+
+3. Запуск одной командой:
+
        python -m jupyter notebook test_task.ipynb
 
-3. В ноутбуке выберите Kernel -> Restart Kernel and Run All Cells
+4. В ноутбуке выберите Kernel -> Restart Kernel and Run All Cells
 
 Без запуска: результаты видны в `test_task.ipynb`
 
 ## Как проверяла
 Проверка пропусков (`isna`), проверка уникальных значений в `response`, сверка итогов: среди согласившихся 2816 пар «клиент + продукт», ни одной из них не было в p_1
+
+## Пример результата
+![Результат задания 5](result.png)
